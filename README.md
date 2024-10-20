@@ -27,5 +27,5 @@ http://localhost:5100/api/v1/is-fake-news/sAmwIKTx9hs
 
 ## How it works
 ![Image](./image.png)
-- API will receive youtube video id from client and return the result whether the video is fake news or not. 
+- API will receive youtube video id from client, send to openai service (part of analyze service, another agents that will call uAgents) and return the result whether the video is fake news or not. 
 - For now it determine if the video is fake news by pulling transcript, comments title of the video then send to uAgennts (fakenew agent) to determine if the video is fake news or not.
